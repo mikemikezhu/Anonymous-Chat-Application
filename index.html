@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用闲聊 不无聊</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div id = "username_container">
+        <div id = "background">
+            <div>
+                <img id = "left_giraffe" src="img/giraffe_1.png">
+            </div>
+            <div>
+                <img id = "right_giraffe" src="img/giraffe_2.png">
+            </div>
+            <div>
+                <img id = "heart" src="img/heart.png">
+            </div>
+        </div>
+        <div id = "main_container">
+            <div id = "title">
+                <div>
+                    <img id = "title_img" src="img/title.png">
+                </div>
+                <div>
+                    <img id = "subtitle_img" src="img/subtitle.png">
+                </div>
+            </div>
+            <div id = "username_box">
+                <form action="">
+                    <div>
+                        <input id = "nickname" autocomplete="off" placeholder="请输入昵称" />
+                    </div>
+                    <div>
+                        <button>闲聊去</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id = "waiting_container">
+        <div id = "waiting_image">
+            <img src="img/waiting.png">
+        </div>
+        <div id = "waiting_title">
+            <p>尚未有人加入闲聊，请耐心等待...</p>
+        </div>
+    </div>
+    <div id = "chat_container">
+        <p id = "partner_status"></p>
+        <ul id="messages"></ul>
+        <form action="">
+            <input id="chat_message" autocomplete="off" />
+            <button>发送</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*********************************
+RESPONSIVE STYLE
+*********************************/
+@media (max-width: 500px) {
+    #chat_container form button {
+        width: 100px;
+    }
+
+    #chat_container form input {
+        width: calc(100% - 132px);
+        width: -moz-calc(100% - 132px);
+        width: -webkit-calc(100% - 132px);
+        width: -o-calc(100% - 132px);
+    }
+
+}
